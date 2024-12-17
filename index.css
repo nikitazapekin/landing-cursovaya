@@ -1,0 +1,691 @@
+:root {
+    --background: #AAA995;
+    --black: #000000;
+    --gray: #d8d8d8;
+    --white: #fff;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+
+
+body {
+    background: var(--background);
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #000;
+
+}
+
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+
+[class*="__container"] {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+
+}
+
+
+.header {
+    width: 100%;
+    height: auto;
+    margin-top: 42px;
+    overflow-x: hidden;
+
+}
+
+.header__container {}
+
+.header__navigation {}
+
+.header__list {
+    display: flex;
+    column-gap: 48px;
+}
+
+.header__list__item, .header__info__item {
+    font-family: "NT Somic", sans-serif;
+    cursor: pointer;
+
+}
+.header__list__item:hover {
+    text-decoration: underline;
+}
+
+.header__info {
+    max-width: 150px;
+    font-family: "NT Somic", sans-serif;
+}
+
+.header__desctop {
+    display: flex;
+
+    justify-content: space-between;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.header__mobile {
+
+    display: none;
+
+    justify-content: space-between;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.burger {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+
+    height: 100%;
+    border: none;
+    position: relative;
+    z-index: 11;
+    cursor: pointer;
+}
+
+.burger__item {
+
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    transition: 0.4s ease-in-out;
+    margin-top: 10px;
+}
+.mobile-item  {
+    font-size: 32px;
+}
+.header__navigation__mobile {
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+
+    width: 100%;
+    transform: translateX(-100%);
+    transition: 0.4s ease-in-out;
+    background-color: gray;
+    z-index: 111;
+}
+
+.active {
+    transform: translateX(0);
+}
+
+.header__list__mobile {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+@media screen and (max-width:480px) {
+    .background {
+        height: 1000px;
+    }
+}
+
+.welcome {
+    margin-bottom: 90px;
+}
+
+.welcome__container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.welcome__title {
+    font-weight: 900;
+    font-size: 165px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+    font-family: "Intro Friday", sans-serif;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1400px) {
+    .welcome__title {
+        white-space: wrap;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .welcome__title {
+        white-space: wrap;
+        font-size: 115px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .welcome__title {
+        white-space: wrap;
+        font-size: 66px;
+        margin-top: 50px;
+
+    }
+}
+
+.welcome__about {
+    text-transform: uppercase;
+    font-family: "Intro Friday", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: var(--black);
+    margin-top: 202px;
+}
+
+@media screen and (max-width: 768px) {
+    .welcome__about {
+        margin-top: 40px;
+        font-size: 24px;
+    }
+}
+
+.welcome__btn {
+    border: 1px solid var(--black);
+    align-self: center;
+    border-radius: 43px;
+    cursor: pointer;
+
+    margin-top: 83px;
+    height: 44px;
+    width: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+
+}
+.welcome__btn:hover {
+    background-color: gray;
+    transform: scale(1.1);
+}
+
+
+.info {
+    margin-top: 214px;
+}
+
+.info__inner {
+    display: flex;
+    border-radius: 34px;
+    padding: 57px 56px;
+    backdrop-filter: blur(35.32420349121094px);
+    box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 1px 0 rgba(0, 0, 0, 0.25);
+    background: rgba(173, 172, 154, 0.2);
+
+
+
+
+    backdrop-filter: blur(40px);
+    box-shadow: inset 2px 0 1px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 1px 0 rgba(0, 0, 0, 0.25);
+    background-image: url(./assets/Frame\ 55.png);
+
+
+
+    max-width: 967px;
+    margin: 0 auto;
+    column-gap: 68px;
+}
+
+@media screen and (max-width: 1024px) {
+    .info__inner {
+        flex-direction: column;
+        row-gap: 20px;
+
+    }
+}
+
+@media screen and (max-width:480px) {
+    .info__inner {
+        padding: 20px;
+    }
+}
+
+.info__image {}
+
+.info__content {}
+
+.info__title {
+
+    font-family: "Intro Friday", sans-serif;
+
+    font-weight: 700;
+    font-size: 36px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+
+}
+
+.info__about {
+
+    font-family: "Intro Friday", sans-serif;
+
+    font-weight: 700;
+    font-size: 22px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    margin-top: 33px;
+
+
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .info__title,
+    .info__about {
+        text-align: center;
+    }
+}
+
+
+
+.we {
+
+    margin-top: 176px;
+
+}
+
+.we__wrapper {
+    width: 100%;
+    height: auto;
+    background-image: url(./assets/back2.png);
+    background-repeat: no-repeat;
+
+
+    background-size: cover;
+    border-radius: 100px 100px 0 0;
+}
+
+.we__background {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1;
+}
+
+.we__container {
+
+    padding: 67px 15px 47px 15px;
+}
+
+.we__header {
+    margin: 0 auto;
+}
+
+.we__header__regular {
+
+    font-weight: 400;
+    font-size: 52px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Petrov Sans-Trial", sans-serif;
+
+}
+
+.we__header__bold {
+
+    font-weight: 900;
+    font-size: 56px;
+    text-align: center;
+    color: var(--gray);
+    font-family: "Intro Friday", sans-serif;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+
+    .we__header__bold,
+    .we__header__regular {
+        font-size: 32px;
+    }
+}
+
+.we__header__here {
+    font-family: "Intro Friday", sans-serif;
+    font-weight: 900;
+    font-size: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--gray)
+}
+
+.we__offer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+    width: 100%;
+    align-items: center;
+    margin-top: 52px;
+
+
+}
+
+.we__offer__card {
+    border-radius: 27px;
+    padding: 22px;
+    background: rgba(173, 172, 154, 0.2);
+    width: 100%;
+    max-width: 954px;
+
+
+
+    backdrop-filter: blur(40px);
+    box-shadow: inset 2px 0 1px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 1px 0 rgba(0, 0, 0, 0.25);
+    background-image: url(./assets/Frame\ 55.png);
+
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.we__offer__content {}
+
+.we__offer__title {
+    font-family: "Intro Friday", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    max-width: 504px;
+    color: var(--white);
+}
+
+.we__offer__text-right {
+    align-self: flex-end;
+    text-align: right;
+}
+
+.we__offer__title-right {
+    align-self: flex-end;
+    text-align: right;
+}
+
+.we__offer__text {
+    font-family: "Intro Friday", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--white);
+    max-width: 763px;
+
+}
+
+.our__title {
+    font-family: "Intro Friday", sans-serif;
+    font-weight: 400;
+    font-size: 57px;
+    text-align: center;
+    color: var(--white);
+    margin-top: 121px;
+    margin-bottom: 35px;
+}
+
+.our__cards {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1200px) {
+    .our__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .our__card__image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .our__cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+.our__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+
+
+
+    backdrop-filter: blur(40px);
+    box-shadow: inset 2px 0 1px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 1px 0 rgba(0, 0, 0, 0.25);
+    background-image: url(./assets/Frame\ 55.png);
+
+    cursor: pointer;
+    padding: 43px 30px 43px 30px;
+    position: relative;
+    transition: 0.4s ease-in-out;
+}
+.our__card:hover {
+transform: scale(1.05);
+}
+.our__card__title {
+    text-align: center;
+}
+
+
+.our__card__fon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 40px;
+    opacity: 0.4;
+    backdrop-filter: blur(40px);
+    box-shadow: inset 2px 0 1px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 1px 0 rgba(0, 0, 0, 0.25);
+    transition: 0.4s ease-in-out;
+}
+
+.our__card__fon:hover {
+    transform: scale(1.1);
+}
+
+.our__card__title {
+    font-family: "Intro Friday", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: var(--white);
+    margin-top: 23px;
+}
+
+
+
+
+.trust {
+    background-image: url(./assets/trust-us.png);
+    background-size: cover;
+
+}
+
+.trust__container {
+    padding: 59px 0 90px 0;
+}
+
+.trust__inner {
+    border-radius: 98px;
+    background-image: url(./assets/Frame\ 55.png);
+
+    padding: 198px 114px;
+
+    backdrop-filter: blur(40px);
+    box-shadow: inset 2px 0 1px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 1px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .trust__inner {
+        padding: 50px 20px;
+    }
+}
+
+.trust__text {
+
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: var(--white);
+    font-family: "Intro Friday", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.trust__btn {
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px 28px;
+    color: var(--white);
+    border: 3px solid var(--white);
+    background-color: transparent;
+    border-radius: 60px;
+
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: var(--white);
+    font-family: "Intro Friday", sans-serif;
+    height: 90px;
+    align-items: center;
+    margin: 0 auto;
+    transition: 0.4s ease-in-out;
+   
+}
+.trust__btn  a {
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: var(--white);
+    font-family: "Intro Friday", sans-serif;
+    color: var(--white);
+}
+.trust__btn:hover {
+    transform: rotateX(10deg) rotateY(10deg);
+}
+
+
+
+.footer {
+    background-color: var(--black);
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 0;
+    row-gap: 30px;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 560px) {
+    .footer__info {
+        flex-direction: column;
+    }
+}
+
+.footer__block {}
+
+.footer__block__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footer__block__item {
+
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: var(--white);
+    font-family: "Intro Friday", sans-serif;
+    cursor: pointer;
+}
+
+.footer__card {
+    height: 300px;
+}
+
+.line {
+    background-color: var(--white);
+    height: 2px;
+    width: 100%;
+}
+
+.footer__copyright {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: var(--white);
+    font-family: "Intro Friday", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .header__desctop {
+        display: none;
+    }
+
+    .header__mobile {
+        display: flex;
+    }
+}
