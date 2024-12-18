@@ -689,3 +689,7 @@ transform: scale(1.05);
         display: flex;
     }
 }
+
+.footer__image {
+    mix-blend-mode:lighten;
+}

@@ -14,7 +14,7 @@
 
 
 body {
-   
+
     font-weight: 400;
     font-size: 16px;
 
@@ -267,47 +267,51 @@ body {
 .image-one {
     align-self: flex-start;
     margin-top: 40px;
-    flex: 0 0 275px;
+    /*   flex: 0 0 275px;
+ */
     position: relative;
     z-index: 2;
+    max-width: 275px;
+    width: 100%;
 }
 
 .catalog__left {
     position: relative;
 }
+
 .catalog__title {
     position: absolute;
     left: 0;
     top: 0;
 
     font-weight: 700;
-font-size: 68px;
-text-align: center;
-color: var(--white);
-font-family: "Intro Friday", sans-serif;
-transform: translateX(-100px) translateY(-20px);
-white-space: nowrap;
-z-index: 111;
+    font-size: 68px;
+    text-align: center;
+    color: var(--white);
+    font-family: "Intro Friday", sans-serif;
+    transform: translateX(-100px) translateY(-20px);
+    white-space: nowrap;
+    z-index: 111;
 }
 
 
 .catalog__panel {
     backdrop-filter: blur(35.32420349121094px);
-box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 1px 0 rgba(0, 0, 0, 0.25);
-background: rgba(84, 84, 84, 0.3), rgba(173, 172, 154, 0.2);
+    box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 1px 0 rgba(0, 0, 0, 0.25);
+    background: rgba(84, 84, 84, 0.3), rgba(173, 172, 154, 0.2);
 
 
-background-image: url(./assets/Frame\ 55.png);
-height: 94px;
-position: absolute;
-left: calc(100% - 90px);
-top: 65px;
-z-index: 1;
-max-width: 320px;
-width: 100%;
-border-radius: 19px;
-padding-top: 18px;
-padding-right: 20px;
+    background-image: url(./assets/Frame\ 55.png);
+    height: 94px;
+    position: absolute;
+    left: calc(100% - 90px);
+    top: 65px;
+    z-index: 1;
+    max-width: 320px;
+    width: 100%;
+    border-radius: 19px;
+    padding-top: 18px;
+    padding-right: 20px;
 
 }
 
@@ -315,13 +319,13 @@ padding-right: 20px;
     backdrop-filter: blur(35.32420349121094px);
     box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 1px 0 rgba(0, 0, 0, 0.25);
     background: rgba(84, 84, 84, 0.3), rgba(173, 172, 154, 0.2);
-    
-    
+
+
     background-image: url(./assets/Frame\ 55.png);
     height: 70px;
     position: absolute;
-  left: 0;
-   bottom: 0;
+    left: 0;
+    bottom: 0;
     z-index: 4;
     max-width: 220px;
     width: 100%;
@@ -329,8 +333,9 @@ padding-right: 20px;
     padding-top: 18px;
     padding-right: 20px;
     transform: translateX(-55px) translateY(24px);
-    
+
 }
+
 .catalog__panel__text {
 
     font-weight: 400;
@@ -343,15 +348,15 @@ padding-right: 20px;
 }
 
 .catalog__panel__text-bottom {
-   
+
     font-weight: 400;
     font-size: 24px;
     text-align: right;
     color: var(--white);
     font-family: "Intro Friday", sans-serif;
-    
-    margin-left: auto; 
-} 
+
+    margin-left: auto;
+}
 
 
 
@@ -359,29 +364,30 @@ padding-right: 20px;
     backdrop-filter: blur(35.32420349121094px);
     box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 1px 0 rgba(0, 0, 0, 0.25);
     background: rgba(84, 84, 84, 0.3), rgba(173, 172, 154, 0.2);
-    
-    
+
+
     background-image: url(./assets/Frame\ 55.png);
     height: 70px;
     position: absolute;
-left: 0;
-  top: 50%;
+    left: 0;
+    top: 50%;
     z-index: 2;
     max-width: 253px;
     width: 100%;
     border-radius: 19px;
     padding-top: 18px;
     padding-left: 20px;
-    transform: translateX(-90% ) translateY(-50%);
+    transform: translateX(-90%) translateY(-50%);
 }
+
 .catalog__panel__text-center {
     font-weight: 400;
     font-size: 24px;
     text-align: left;
     color: var(--white);
     font-family: "Intro Friday", sans-serif;
-    
-    margin-right: auto; 
+
+    margin-right: auto;
 }
 
 
@@ -390,29 +396,30 @@ left: 0;
     backdrop-filter: blur(35.32420349121094px);
     box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 1px 0 rgba(0, 0, 0, 0.25);
     background: rgba(84, 84, 84, 0.3), rgba(173, 172, 154, 0.2);
-    
-    
+
+
     background-image: url(./assets/Frame\ 55.png);
     height: 70px;
     position: absolute;
-right: 0;
-  top: 50%;
+    right: 0;
+    top: 50%;
     z-index: 2;
     max-width: 253px;
     width: 100%;
     border-radius: 19px;
     padding-top: 18px;
     padding-right: 20px;
-    transform: translateX(-20% ) translateY(-50%);
+    transform: translateX(-20%) translateY(-50%);
 }
+
 .catalog__panel__text-last {
     font-weight: 400;
     font-size: 24px;
     text-align: right;
     color: var(--white);
     font-family: "Intro Friday", sans-serif;
-    
-    margin-left: auto; 
+
+    margin-left: auto;
 }
 
 
@@ -425,22 +432,29 @@ right: 0;
 
 .catalog__imahe {}
 
-.image-two {}
+.image-two {
+    max-width: 465px;
+    width: 100%;
+
+}
 
 .catalog__line {
     display: flex;
     column-gap: 13px;
-
 }
 
 .image-three {
     margin-bottom: auto;
+    max-width: 264px;
+    width: 100%;
 }
 
 .image-four {
     align-self: center;
     position: relative;
     z-index: 2;
+    max-width: 233px;
+    width: 100%;
 }
 
 .catalog__line {
@@ -450,6 +464,102 @@ right: 0;
 
 
 
-@media screen and (max-width: 1024px) {
+.catalog__content__mobile {
+ 
+    display: none;
+}
+
+.catalog__content__card {
+    display: grid;
+    grid-template-columns: minmax(200px, 500px);
+    position: relative;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+ 
+.catalog__image__mobile {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.catalog__panel-mobile {
+
+
+    backdrop-filter: blur(35.32420349121094px);
+    box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 1px 0 rgba(0, 0, 0, 0.25);
+    background: rgba(84, 84, 84, 0.3), rgba(173, 172, 154, 0.2);
+
+
+    background-image: url(./assets/Frame\ 55.png);
+    height: 70px;
+    position: absolute;
+    left: 0;
+  bottom: 0;
+    z-index: 2;
+    max-width: 253px;
+    width: 100%;
+    border-radius: 19px;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-10px);
+   
+}
+
+.catalog__panel__text-mobile {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: var(--white);
+    font-family: "Intro Friday", sans-serif;
+
     
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .catalog__content {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        row-gap: 13px;
+        display: none;
+
+    }
+
+    .catalog__line {
+        flex-direction: column;
+        width: 100%;
+        row-gap: 13px;
+    }
+
+    .catalog__block {
+        width: 100%;
+        flex-direction: column;
+        row-gap: 13px;
+    }
+
+    .catalog__content__mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .catalog__content__mobile {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 13px;
+    }
 }
