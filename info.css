@@ -282,7 +282,9 @@ body {
     display: flex;
     column-gap: 60px;
     justify-content: center;
-margin-bottom: 120px;
+    flex-direction: column;
+    margin-bottom: 120px;
+  
 
 }
 
@@ -324,14 +326,6 @@ margin-bottom: 120px;
     margin-left: 60px;
 }
 
-.title__wrapper {}
-
-.contacts__title {
-
-    /* position: relative;
-   */
-}
-
 
 .sales__info__card {
     display: flex;
@@ -343,9 +337,10 @@ margin-bottom: 120px;
     font-weight: 600;
     font-size: 19px;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     color: rgba(0, 0, 0, 0.6);
     font-family: "Intro Friday", sans-serif;
+
 }
 
 .sales__info__price {
@@ -371,3 +366,50 @@ margin-bottom: 120px;
     row-gap: 16px;
 
 }
+
+.info__arrow {
+   
+    transform: scale(-1);
+    cursor: pointer;
+    align-self: center;
+    transition: 0.4s ease-in-out;
+
+}
+
+.info__arrow:hover {
+    transform: scale(-1.1);
+}
+
+.info__btn {
+   
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "Intro Friday", sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    align-self: center;
+    transition: 0.4s ease-in-out;
+}
+.info__btn:hover {
+    transform: rotateX(10deg) rotateY(10deg);
+}
+.info__preview {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+@media screen and (max-width: 768px) {
+    .info__preview { 
+flex-direction: column;
+align-items: center;
+    }
+}
+.info__navigation {
+    display: flex;
+   margin-top: 60px;
+    justify-content: space-between;
+} 
