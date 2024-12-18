@@ -3,13 +3,17 @@
 
 const burger = document.querySelector(".burger")
 let burgerPanel = document.querySelector(".header__navigation__mobile ")
+const backgroundBurger = document.querySelector(".dark__background")
 
+//background__closed
 let isActiveBurger = false
 burger.addEventListener("click", () => {
     if (isActiveBurger) {
+        backgroundBurger.classList.add("background__closed")
         burgerPanel.classList.remove("active")
     } else {
         burgerPanel.classList.add("active")
+        backgroundBurger.classList.remove("background__closed")
     }
     isActiveBurger = !isActiveBurger
 })

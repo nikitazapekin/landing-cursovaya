@@ -101,7 +101,7 @@ body {
     height: 100%;
     border: none;
     position: relative;
-    z-index: 11;
+    z-index: 12;
     cursor: pointer;
 }
 
@@ -119,7 +119,7 @@ body {
 .header__navigation__mobile {
     height: 100%;
 
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     display: flex;
@@ -131,10 +131,38 @@ body {
     width: 100%;
     transform: translateX(-100%);
     transition: 0.4s ease-in-out;
-    background-color: gray;
+   /* background-color: gray;
+   */
+   z-index: 1111;
+
+   background-image: url(./assets/Frame\ 55.png);
+
+   
+
+   backdrop-filter: blur(40px) brightness(1.6);
+  /* 
+  */
+  box-shadow: inset 2px 0 1px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 1px 0 rgba(0, 0, 0, 0.25);
+ 
+
     z-index: 111;
 }
-
+.dark__background {
+    
+    transition: 0.4s ease-in-out;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    position:fixed;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+}
+.background__closed {
+    display: none;
+    transition: 0.4s ease-in-out;
+}
 .active {
     transform: translateX(0);
 }
