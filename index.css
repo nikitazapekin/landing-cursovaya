@@ -640,11 +640,18 @@ transform: scale(1.05);
 
 @media screen and (max-width: 560px) {
     .footer__info {
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .footer__block:nth-child(2) {
+      order: 1
     }
 }
 
-.footer__block {}
+.footer__block {
+    display: flex;
+    flex-direction: column;
+}
 
 .footer__block__list {
     display: flex;
@@ -679,7 +686,10 @@ transform: scale(1.05);
     color: var(--white);
     font-family: "Intro Friday", sans-serif;
 }
-
+.footer__image {
+    margin: 0 auto;
+    align-self: center;
+}
 @media screen and (max-width: 768px) {
     .header__desctop {
         display: none;
@@ -690,6 +700,4 @@ transform: scale(1.05);
     }
 }
 
-.footer__image {
-    mix-blend-mode:lighten;
-}
+ 
