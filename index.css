@@ -61,11 +61,13 @@ body {
     column-gap: 48px;
 }
 
-.header__list__item, .header__info__item {
+.header__list__item,
+.header__info__item {
     font-family: "NT Somic", sans-serif;
     cursor: pointer;
 
 }
+
 .header__list__item:hover {
     text-decoration: underline;
 }
@@ -113,9 +115,11 @@ body {
     transition: 0.4s ease-in-out;
     margin-top: 10px;
 }
-.mobile-item  {
+
+.mobile-item {
     font-size: 32px;
 }
+
 .header__navigation__mobile {
     height: 100%;
 
@@ -131,37 +135,40 @@ body {
     width: 100%;
     transform: translateX(-100%);
     transition: 0.4s ease-in-out;
-   /* background-color: gray;
+    /* background-color: gray;
    */
-   z-index: 1111;
+    z-index: 1111;
 
-   background-image: url(./assets/Frame\ 55.png);
+    background-image: url(./assets/Frame\ 55.png);
 
-   
 
-   backdrop-filter: blur(40px) brightness(1.6);
- 
-  box-shadow: inset 2px 0 1px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 1px 0 rgba(0, 0, 0, 0.25);
- 
+
+    backdrop-filter: blur(40px) brightness(1.6);
+
+    box-shadow: inset 2px 0 1px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 1px 0 rgba(0, 0, 0, 0.25);
+
 
     z-index: 111;
 }
+
 .dark__background {
-    
+
     transition: 0.4s ease-in-out;
     background-color: #000;
     width: 100%;
     height: 100%;
     z-index: 11;
-    position:fixed;
+    position: fixed;
     left: 0;
     top: 0;
     opacity: 0.5;
 }
+
 .background__closed {
     display: none;
     transition: 0.4s ease-in-out;
 }
+
 .active {
     transform: translateX(0);
 }
@@ -262,6 +269,7 @@ body {
     transition: 0.4s ease-in-out;
 
 }
+
 .welcome__btn:hover {
     background-color: gray;
     transform: scale(1.1);
@@ -498,23 +506,7 @@ body {
     grid-gap: 30px;
     margin: 0 auto;
 }
-
-@media screen and (max-width:1200px) {
-    .our__cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .our__card__image {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .our__cards {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-}
+ 
 
 .our__card {
     display: flex;
@@ -529,13 +521,14 @@ body {
     background-image: url(./assets/Frame\ 55.png);
 
     cursor: pointer;
-    padding: 43px 30px 43px 30px;
+    padding: 43px 30px 43px 30px; 
+   /*
+    */
     position: relative;
     transition: 0.4s ease-in-out;
 }
-.our__card:hover {
-transform: scale(1.05);
-}
+
+
 .our__card__title {
     text-align: center;
 }
@@ -566,8 +559,71 @@ transform: scale(1.05);
     text-align: center;
     color: var(--white);
     margin-top: 23px;
+    hyphens: auto; 
+   word-break: break-word; 
 }
 
+
+
+
+@media screen and (max-width:1200px) {
+
+    .our__cards {
+        width: 100%;
+       
+    }
+    
+        .our__card {
+            max-width: 100%;
+            padding: 20px 10px;
+    
+        }
+    
+        .our__card__image {
+            width: 100%;
+            max-width: 100%;
+            height:100%;
+            max-height: 600px;
+        }
+        
+    .our__card__title {
+    font-size: 16px;
+    }
+    
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .our__cards {
+            grid-gap: 10px;
+            /*
+            transform: scale(0.8);
+            */
+        }
+    
+    }
+    
+    @media screen and (max-width: 480px) {
+        .our__cards {
+display: flex;
+width: 100%;
+ 
+        }
+        .our__card {
+            width: 100%;
+        }
+        /*  .our__cards {
+            grid-template-columns: repeat(1, 1fr);
+        }
+            */
+    
+    }
+
+
+
+.our__card:hover {
+    transform: scale(1.05);
+}
+ 
 
 
 
@@ -632,9 +688,10 @@ transform: scale(1.05);
     align-items: center;
     margin: 0 auto;
     transition: 0.4s ease-in-out;
-   
+
 }
-.trust__btn  a {
+
+.trust__btn a {
     font-weight: 400;
     font-size: 36px;
     text-align: center;
@@ -642,6 +699,7 @@ transform: scale(1.05);
     font-family: "Intro Friday", sans-serif;
     color: var(--white);
 }
+
 .trust__btn:hover {
     transform: rotateX(10deg) rotateY(10deg);
 }
@@ -671,7 +729,7 @@ transform: scale(1.05);
     }
 
     .footer__block:nth-child(2) {
-      order: 1
+        order: 1
     }
 }
 
@@ -713,10 +771,12 @@ transform: scale(1.05);
     color: var(--white);
     font-family: "Intro Friday", sans-serif;
 }
+
 .footer__image {
     margin: 0 auto;
     align-self: center;
 }
+
 @media screen and (max-width: 768px) {
     .header__desctop {
         display: none;
@@ -726,5 +786,3 @@ transform: scale(1.05);
         display: flex;
     }
 }
-
- 
